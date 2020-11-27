@@ -1,0 +1,672 @@
+#pw {
+    height:auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: calc(50% - 500px);
+    margin-right: calc(50% - 500px);
+}
+#pw .service-choose {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid black;
+    text-align: center;
+}
+#pw hr {
+    background-color: #37474F;
+}
+
+
+#pw .checkbox-service {
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    display: block;
+}
+
+#pw .checkbox-service label {
+    position: relative;
+    display: block;
+    font-weight: normal;
+    cursor: pointer;
+    height: 75px;
+}
+#pw .checkbox-service label:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 65px;
+    height: 65px;
+    transition: transform 0.28s ease;
+    border-radius: 3px;
+    border: 2px solid black;
+    transform: translate(-50%, 0%);
+}
+#pw .checkbox-service label:after {
+    content: '';
+    display: block;
+    width: 65px;
+    height: 25px;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    transform: rotate(-45deg) scale(0);
+    transition: transform ease 0s;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+}
+#pw .checkbox-service input[type="checkbox"] {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+    margin-left: -20px;
+}
+#pw .checkbox-service input[type="checkbox"]:checked ~ label::before{
+    border: 2px solid black;
+}
+#pw .checkbox-service input[type="checkbox"]:checked ~ label:after {
+    transform: rotate(-60deg) scale(1) translate(-50%, -50%);
+}
+#pw .checkbox-service input[type="checkbox"]:focus + label::before {
+    outline: 0;
+}
+
+
+
+#pw input[type="radio"] {
+    display: none;
+}
+#pw input[type="radio"] + label:before {
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+}
+#pw input[type="radio"]:checked + label:before {
+    background-color: black;
+}
+
+
+
+#pw .service-next-btn {
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+}
+#pw .service-next-btn button,
+#pw .tv-service .tv-service-next-btn button,
+#pw .tv-option .tv-option-next-btn button,
+#pw .internet-service .internet-service-next-btn button,
+#pw .internet-option .internet-option-next-btn button,
+#pw .hPhone-service .hPhone-service-next-btn button,
+#pw .cPhone-service .cPhone-service-next-btn button,
+#pw .cPhone-option .cPhone-option-next-btn button,
+#pw .cPhone-option-second .cPhone-option-second-next-btn button,
+#pw .ott-service .ott-service-next-btn button,
+#pw .special-discount .special-discount-next-btn button,
+#pw .online-app .online-app-send-btn button,
+#pw .thanks-page .thanks-page-next-btn button {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+#pw .service-next-btn button:hover,
+#pw .tv-service .back-btn button:hover,
+#pw .tv-service .tv-service-next-btn button:hover,
+#pw .tv-option .back-btn button:hover,
+#pw .internet-service .internet-service-next-btn button:hover,
+#pw .internet-service .back-btn button:hover,
+#pw .internet-option .internet-option-next-btn button:hover,
+#pw .internet-option .back-btn button:hover,
+#pw .hPhone-service .hPhone-service-next-btn button:hover,
+#pw .hPhone-service .back-btn button:hover,
+#pw .cPhone-service .cPhone-service-next-btn button:hover,
+#pw .cPhone-service .back-btn button:hover,
+#pw .cPhone-option .cPhone-option-next-btn button:hover,
+#pw .cPhone-option .back-btn button:hover,
+#pw .cPhone-option-second .cPhone-option-second-next-btn button:hover,
+#pw .cPhone-option-second .back-btn button:hover,
+#pw .ott-service .ott-service-next-btn button:hover,
+#pw .ott-service .back-btn button:hover,
+#pw .special-discount .special-discount-next-btn button:hover,
+#pw .total-price .total-price-next-btn button:hover,
+#pw .call-us .print-btn button:hover,
+#pw .online-app .online-app-send-btn button:hover,
+#pw .thanks-page .thanks-page-next-btn button:hover,
+#pw .total-price .total-price-body .option-item .plan-item button:hover {
+    background-color: #263238;
+}
+#pw .tv-service .tv-service-title,
+#pw .tv-option .tv-option-title,
+#pw .internet-service .internet-service-title,
+#pw .internet-option .internet-option-title,
+#pw .hPhone-service .hPhone-service-title,
+#pw .cPhone-service .cPhone-service-title,
+#pw .cPhone-option .cPhone-option-title,
+#pw .cPhone-option-second .cPhone-option-title,
+#pw .ott-service .ott-service-title,
+#pw .total-price .total-price-title
+{
+    position: relative;
+}
+#pw .tv-service .back-btn button,
+#pw .tv-option .back-btn button,
+#pw .internet-service .back-btn button,
+#pw .internet-option .back-btn button,
+#pw .hPhone-service .back-btn button,
+#pw .cPhone-service .back-btn button,
+#pw .cPhone-option .back-btn button,
+#pw .cPhone-option-second .back-btn button,
+#pw .ott-service .back-btn button,
+#pw .total-price .back-btn button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: black;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
+#pw .tv-service .tv-service-title div:first-child,
+#pw .tv-option .tv-option-title div:first-child,
+#pw .internet-service .internet-service-title div:first-child,
+#pw .internet-option .internet-option-title div:first-child,
+#pw .hPhone-service .hPhone-service-title div:first-child,
+#pw .cPhone-service .cPhone-service-title div:first-child,
+#pw .cPhone-option .cPhone-option-title div:first-child,
+#pw .cPhone-option-second .cPhone-option-title div:first-child,
+#pw .ott-service .ott-service-title div:first-child,
+#pw .special-discount .special-discount-title div:first-child,
+#pw .total-price .total-price-title div:first-child,
+#pw .online-app .online-app-title div:first-child,
+#pw .thanks-page .thanks-page-title div:first-child {
+    font-size: 30px; 
+    font-weight: bold;
+    float: center;
+}
+
+#pw .service-item{
+    border: 1px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TV Service */
+#pw .tv-service {
+    display: none;
+}
+#pw .tv-service .tv-service-body {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#pw .tv-service .tv-service-body .tv-service-item {
+    width: 30%;
+    border: 1px solid;
+    padding: 0px 5% 15px 5%;
+    position: relative;
+}
+#pw .tv-service .tv-service-body .tv-service-item .title {
+    margin: 20px 0px 20px 0px;
+}
+#pw .tv-service .tv-service-body .tv-service-item .detail {
+    font-size: 15px;
+}
+#pw .tv-service .tv-service-body .tv-service-item .price {
+    margin: 30px 0px 15px 0px;
+}
+
+/* TV Option */
+#pw .tv-option {
+    display: none;
+}
+#pw .tv-option .tv-option-body {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    padding: 20px 10px 20px 10px;
+}
+#pw .tv-option .tv-option-body .option-item .title{
+    display: flex;
+    align-items: center;
+}
+#pw .tv-option .tv-option-body .option-item .price {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+#pw .tv-option .tv-option-body .option-item .price div:first-child {
+    margin-right: 10px;
+}
+
+#pw .tv-option .tv-option-body .option-item .detail {
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Internet Service */
+#pw .internet-service {
+    display: none;
+}
+#pw .internet-service .internet-service-body {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#pw .internet-service .internet-service-body .internet-service-item {
+    width: 30%;
+    border: 1px solid;
+    padding: 0px 5% 15px 5%;
+}
+#pw .internet-service .internet-service-body .internet-service-item .title {
+    margin: 20px 0px 20px 0px;
+}
+#pw .internet-service .internet-service-body .internet-service-item .detail {
+    font-size: 15px;
+}
+#pw .internet-service .internet-service-body .internet-service-item .price {
+    margin: 30px 0px 15px 0px;
+}
+
+/* Internet Option */
+#pw .internet-option {
+    display: none;
+}
+#pw .internet-option .internet-option-body {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    padding: 20px 10px 20px 10px;
+}
+#pw .internet-option .internet-option-body .option-item .title{
+    display: flex;
+    align-items: center;
+}
+#pw .internet-option .internet-option-body .option-item .price {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+#pw .internet-option .internet-option-body .option-item .price div:first-child {
+    margin-right: 10px;
+}
+#pw .internet-option .internet-option-body .option-item .detail {
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Home Phone Service */
+#pw .hPhone-service {
+    display: none;
+}
+#pw .hPhone-service .hPhone-service-body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#pw .hPhone-service .hPhone-service-body .hPhone-service-item {
+    width: 20%;
+    border: 1px solid;
+    padding: 0px 5% 15px 5%;
+}
+#pw .hPhone-service .hPhone-service-body .hPhone-service-item .title {
+    margin: 20px 0px 20px 0px;
+}
+#pw .hPhone-service .hPhone-service-body .hPhone-service-item .detail {
+    font-size: 15px;
+}
+#pw .hPhone-service .hPhone-service-body .hPhone-service-item .price {
+    margin: 30px 0px 15px 0px;
+}
+
+/* Cell Phone Service */
+#pw .cPhone-service {
+    display: none;
+}
+#pw .cPhone-service .cPhone-service-body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#pw .cPhone-service .cPhone-service-body .cPhone-service-item {
+    width: 20%;
+    border: 1px solid;
+    padding: 0px 5% 15px 5%;
+}
+#pw .cPhone-service .cPhone-service-body .cPhone-service-item .title {
+    margin: 20px 0px 20px 0px;
+}
+#pw .cPhone-service .cPhone-service-body .cPhone-service-item .detail {
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+
+
+/* Cell Phone Option */
+/* Voice Plan */
+#pw .cPhone-option {
+    display: none;
+}
+#pw .cPhone-option .cPhone-option-body {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    padding: 20px 10px 20px 10px;
+}
+#pw .cPhone-option .cPhone-option-body .option-item .title{
+    display: flex;
+    align-items: center;
+}
+#pw .cPhone-option .cPhone-option-body .option-item .price {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+#pw .cPhone-option .cPhone-option-body .option-item .price div:first-child {
+    margin-right: 10px;
+}
+#pw .cPhone-option .cPhone-option-body .option-item .detail {
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Data Plan */
+.cPhone-option-second {
+    display: none;
+}
+#pw .cPhone-option-second .cPhone-option-body {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    padding: 20px 10px 20px 10px;
+}
+#pw .cPhone-option-second .cPhone-option-body .option-item .title{
+    display: flex;
+    align-items: center;
+}
+#pw .cPhone-option-second .cPhone-option-body .option-item .price {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+#pw .cPhone-option-second .cPhone-option-body .option-item .price div:first-child {
+    margin-right: 10px;
+}
+#pw .cPhone-option-second .cPhone-option-body .option-item .detail {
+    font-size: 15px;
+    text-align: left;
+}
+
+/* OTT Service */
+#pw .ott-service {
+    display: none;
+}
+#pw .ott-service .ott-service-body {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#pw .ott-service .ott-service-body .ott-service-item {
+    width: 30%;
+    border: 1px solid;
+    padding: 0px 5% 15px 5%;
+}
+#pw .ott-service .ott-service-body .ott-service-item .title {
+    margin: 20px 0px 20px 0px;
+}
+#pw .ott-service .ott-service-body .ott-service-item .detail {
+    font-size: 15px;
+}
+#pw .ott-service .ott-service-body .ott-service-item .price {
+    margin: 30px 0px 15px 0px;
+}
+
+/* Special Discount */
+#pw .special-discount {
+    display: none;
+}
+#pw .special-discount .special-discount-detail {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+/* Total Price */
+#pw .total-price {
+    display: none;
+}
+#pw .total-price .total-price-body {
+    margin-top: 30px;
+}
+#pw .total-price .total-price-body .option-item .plan-item {
+    display: flex;
+    align-items: center;
+}
+#pw .total-price .total-price-body .option-item .plan-item div:first-child {
+    font-size: 20px;
+    width: 200px;
+    text-align: left;
+}
+#pw .total-price .total-price-body .option-item .plan-item button {
+    background-color:black;
+    color:white; 
+    font-size: 12px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#pw .total-price .total-price-body .option-item .plan-item .name {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right:auto
+}
+#pw .total-price .total-price-body .option-item .plan-item .name span:first-child {
+    font-size: 12px;
+    margin-right: 5px;
+}
+#pw .total-price .total-price-body .option-item .plan-item .name span:nth-child(2) {
+    font-size: 15px;
+}
+#pw .total-price .total-price-body .option-item .plan-item .price {
+    font-size: 20px;
+}
+#pw .total-price-body .off-value {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#pw .total-price-body .off-value div {
+    font-size: 22px;
+    width: 250px;
+    border: 1px solid;
+    background-color: #EEEEEE;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#pw .total-price-body .price-value {
+    margin-top: 15px;
+}
+#pw .total-price-body .total-price-next-btn {
+    margin-top: 15px;
+}
+#pw .total-price-body .total-price-next-btn button {
+    background: black;
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 49%;
+}
+
+/* Call US */
+#pw .call-us {
+    display: none;
+}
+#pw .call-us-title div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#pw .call-us-title div:first-child img {
+    margin-left: 20px;
+}
+#pw .call-us-title div:first-child span {
+    font-size: 40px;
+    font-weight: bold;
+}
+#pw .call-us-title div:last-child {
+    font-size: 15px;
+}
+#pw .call-us-body .print-btn {
+    display: flex;
+    align-items: center;
+}
+#pw .call-us-body .print-btn button {
+    margin-left: auto;
+    margin-right: 0px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+#pw .call-us-body .print-btn button i {
+    margin-right: 20px;
+}
+    /* Print Preview */
+#pw .call-us .print-preview .option-item .plan-item {
+    display: flex;
+    align-items: center;
+}
+#pw .call-us .print-preview .option-item .plan-item div:first-child {
+    font-size: 20px;
+    width: 200px;
+    text-align: left;
+}
+#pw .call-us .print-preview .option-item .plan-item button {
+    background-color:black;
+    color:white; 
+    font-size: 12px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#pw .call-us .print-preview .option-item .plan-item .name {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right:auto
+}
+#pw .call-us .print-preview .option-item .plan-item .name span:first-child {
+    font-size: 12px;
+    margin-right: 5px;
+}
+#pw .call-us .print-preview .option-item .plan-item .name span:nth-child(2) {
+    font-size: 15px;
+}
+#pw .call-us .print-preview .option-item .plan-item .price {
+    font-size: 20px;
+}
+#pw .call-us .print-preview .off-value {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#pw .call-us .print-preview .off-value div {
+    font-size: 22px;
+    width: 250px;
+    border: 1px solid;
+    background-color: #EEEEEE;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#pw .call-us .print-preview .price-value {
+    margin-top: 15px;
+}
+
+
+/* Online Application */
+#pw .online-app {
+    display: none;
+}
+#pw .online-app-title div:last-child {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#pw .online-app-body {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#pw .online-app-body div {
+    display: flex;
+}
+#pw .online-app-body div:nth-child(3) {
+    margin-bottom: 15px;
+}
+#pw .online-app-body input{
+    font-size: 20px;
+    border: 1px solid;
+    padding-left: 5px;
+}
+#pw .online-app-body input[name="name"],
+#pw .online-app-body input[name="phonenumber"],
+#pw .online-app-body input[name="email"] {
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+#pw .online-app-body input[name="address"] {
+    margin-right: 20px;
+}
+#pw .online-app-body select {
+    font-size: 22px;
+    margin-left: auto;
+    width: calc(100% - 200px);
+}
+#pw .online-app-body textarea {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    width: 100%;
+    height: 200px;
+    font-size: 15px;
+}
+
+/* Thanks Page */
+#pw .thanks-page {
+    display: none;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#pw .thanks-page-title div:last-child {
+    font-size: 15px;
+    margin-bottom: 70px;
+}
