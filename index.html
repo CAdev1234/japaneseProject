@@ -1046,7 +1046,7 @@
 				{ classname: ".cPhone-option", isEnable: false },
 				{ classname: ".cPhone-option-second", isEnable: false },
 				{ classname: ".ott-service", isEnable: false },
-			];
+			]
 			var enableValueOff = true
 			var enableChangePlan = {
 				classname: "",
@@ -1054,6 +1054,7 @@
 			}
 
 			function chooseService() {
+
 				// Register checked page to list variable for showing, pages unregisted will be skipped 
 				if (document.querySelector("#service-start-cb1").checked) {
 					serviceStartItem[0].isEnable = true
@@ -1081,8 +1082,8 @@
 				for (let index = 0; index < enabledService.length; index++) {
 					
 					// eventListener for next button
-					document.querySelector(`#pw ${enabledService[index].classname} ${enabledService[index].classname}-next-btn button`).addEventListener('click', () => {
-						
+					document.querySelector(`#pw ${enabledService[index].classname} ${enabledService[index].classname}-next-btn button`).onclick = function() {
+						console.log("enableChangePlan=", enableChangePlan.is_enable)
 						if (!enableChangePlan.is_enable) {
 							var radios = document.querySelectorAll(`#pw ${enabledService[index].classname} input`)
 
@@ -1099,7 +1100,12 @@
 							
 							// Show or hide plan pages
 							document.querySelector(`#pw .service-choose ${enabledService[index].classname}`).style.display = "none"
-							if (index === enabledService.length - 1) document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+							console.log(index)
+
+							if (index === enabledService.length - 1) {
+								document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+								return
+							}
 							else {
 								if (enabledService[index].classname === ".cPhone-service" && allPlans.filter(item => item.id === checkedRadio[0].id)[0].plan_type === "音声プラン") {
 									document.querySelector(`#pw .service-choose ${enabledService[index + 1].classname}`).style.display = "block"
@@ -1110,8 +1116,13 @@
 									return
 								}
 								if (enabledService[index].classname === ".cPhone-option") {
-									document.querySelector(`#pw .service-choose ${enabledService[index + 2].classname}`).style.display = "block"
-									return
+									if (enabledService[index+2] === undefined) {
+										document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+										return
+									}else {
+										document.querySelector(`#pw .service-choose ${enabledService[index + 2].classname}`).style.display = "block"
+										return
+									}
 								}
 								if (enabledService[index].classname === ".cPhone-option-second") {
 									document.querySelector(`#pw .service-choose ${enabledService[index + 1].classname}`).style.display = "block"
@@ -1160,13 +1171,28 @@
 							enableChangePlan.classname = ""
 							enableChangePlan.is_enable = false
 						}
-					})
+					}
 					
 					// eventListener for back button
-					document.querySelector(`#pw ${enabledService[index].classname} .back-btn button`).addEventListener('click', () => {
+					document.querySelector(`#pw ${enabledService[index].classname} .back-btn button`).onclick = function() {
+						enableChangePlan.is_enable = false
+						enableChangePlan.classname = ""
 						document.querySelector(`#pw ${enabledService[index].classname}`).style.display = "none"
 						if (index === 0) {
+							serviceStartItem = [
+								{ classname: ".tv-service", isEnable: false },
+								{ classname: ".tv-option", isEnable: false },
+								{ classname: ".internet-service", isEnable: false },
+								{ classname: ".internet-option", isEnable: false },
+								{ classname: ".hPhone-service", isEnable: false },
+								{ classname: ".cPhone-service", isEnable: false },
+								{ classname: ".cPhone-option", isEnable: false },
+								{ classname: ".cPhone-option-second", isEnable: false },
+								{ classname: ".ott-service", isEnable: false },
+							]
+							selectedPlan = []
 							document.querySelector(`#pw .service-choose .service-start`).style.display = "block"
+
 						}else {
 							if (enabledService[index].classname === ".ott-service" && selectedPlan.filter(item => item.id.search("cPhone-option-rd") !== -1).length !== 0) {
 								document.querySelector(`#pw .service-choose ${enabledService[index-2].classname}`).style.display = "block"
@@ -1193,7 +1219,7 @@
 						document.querySelector(`#pw .service-choose ${enabledService[index-1].classname}`).style.display = "block"
 						// Delete plan when go previous page
 						selectedPlan = selectedPlan.filter(item => item.id.search(enabledService[index-1].classname.replace(".", "")) === -1)
-					})	
+					}
 				}
 			}
 
