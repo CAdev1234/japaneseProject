@@ -111,7 +111,7 @@
 #pw .hPhone-service .hPhone-service-next-btn button,
 #pw .cPhone-service .cPhone-service-next-btn button,
 #pw .cPhone-option .cPhone-option-next-btn button,
-#pw .cPhone-option-second .cPhone-option-second-next-btn button,
+#pw .cPhone-second-option .cPhone-second-option-next-btn button,
 #pw .ott-service .ott-service-next-btn button,
 #pw .special-discount .special-discount-next-btn button,
 #pw .online-app .online-app-send-btn button,
@@ -140,8 +140,8 @@
 #pw .cPhone-service .back-btn button:hover,
 #pw .cPhone-option .cPhone-option-next-btn button:hover,
 #pw .cPhone-option .back-btn button:hover,
-#pw .cPhone-option-second .cPhone-option-second-next-btn button:hover,
-#pw .cPhone-option-second .back-btn button:hover,
+#pw .cPhone-second-option .cPhone-second-option-next-btn button:hover,
+#pw .cPhone-second-option .back-btn button:hover,
 #pw .ott-service .ott-service-next-btn button:hover,
 #pw .ott-service .back-btn button:hover,
 #pw .special-discount .special-discount-next-btn button:hover,
@@ -159,7 +159,7 @@
 #pw .hPhone-service .hPhone-service-title,
 #pw .cPhone-service .cPhone-service-title,
 #pw .cPhone-option .cPhone-option-title,
-#pw .cPhone-option-second .cPhone-option-title,
+#pw .cPhone-second-option .cPhone-option-title,
 #pw .ott-service .ott-service-title,
 #pw .total-price .total-price-title
 {
@@ -172,7 +172,7 @@
 #pw .hPhone-service .back-btn button,
 #pw .cPhone-service .back-btn button,
 #pw .cPhone-option .back-btn button,
-#pw .cPhone-option-second .back-btn button,
+#pw .cPhone-second-option .back-btn button,
 #pw .ott-service .back-btn button,
 #pw .total-price .back-btn button {
     position: absolute;
@@ -190,7 +190,7 @@
 #pw .hPhone-service .hPhone-service-title div:first-child,
 #pw .cPhone-service .cPhone-service-title div:first-child,
 #pw .cPhone-option .cPhone-option-title div:first-child,
-#pw .cPhone-option-second .cPhone-option-title div:first-child,
+#pw .cPhone-second-option .cPhone-option-title div:first-child,
 #pw .ott-service .ott-service-title div:first-child,
 #pw .special-discount .special-discount-title div:first-child,
 #pw .total-price .total-price-title div:first-child,
@@ -398,28 +398,28 @@
 }
 
 /* Data Plan */
-.cPhone-option-second {
+.cPhone-second-option {
     display: none;
 }
-#pw .cPhone-option-second .cPhone-option-body {
+#pw .cPhone-second-option .cPhone-option-body {
     margin-top: 40px;
     margin-bottom: 30px;
     border: 1px solid;
     padding: 20px 10px 20px 10px;
 }
-#pw .cPhone-option-second .cPhone-option-body .option-item .title{
+#pw .cPhone-second-option .cPhone-option-body .option-item .title{
     display: flex;
     align-items: center;
 }
-#pw .cPhone-option-second .cPhone-option-body .option-item .price {
+#pw .cPhone-second-option .cPhone-option-body .option-item .price {
     display: flex;
     align-items: center;
     margin-left: auto;
 }
-#pw .cPhone-option-second .cPhone-option-body .option-item .price div:first-child {
+#pw .cPhone-second-option .cPhone-option-body .option-item .price div:first-child {
     margin-right: 10px;
 }
-#pw .cPhone-option-second .cPhone-option-body .option-item .detail {
+#pw .cPhone-second-option .cPhone-option-body .option-item .detail {
     font-size: 15px;
     text-align: left;
 }
