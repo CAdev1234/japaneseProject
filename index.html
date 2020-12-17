@@ -333,7 +333,7 @@
 				<!-- Internet Option Section -->
 				<section class="internet-option">
 					<div class="internet-option-title">
-						<div>テレビオプション</div>
+						<div>インターネットオプション</div>
 						<div class="back-btn">
 							<button>&#x25c0; 戻る</button>
 						</div>
@@ -362,6 +362,13 @@
 										<label for="internet-option-rd2"></label>
 									</div>
 								</div>
+								<div class="price" style="display: none;">
+									<div>月額￥100</div>
+									<div class="service-radio">
+										<input type="radio" id="internet-option-rd5" name="internet-option-radio-first">
+										<label for="internet-option-rd5"></label>
+									</div>
+								</div>
 							</div>
 							<div class="detail">ONU 内蔵でこれ 1 台でお部屋スッキリ。</div>
 							<hr style="height: 1px;" />
@@ -375,6 +382,13 @@
 										<label for="internet-option-rd3"></label>
 									</div>
 								</div>
+								<div class="price" style="display: none;">
+									<div>月額￥200</div>
+									<div class="service-radio">
+										<input type="radio" id="internet-option-rd6" name="internet-option-radio-first">
+										<label for="internet-option-rd6"></label>
+									</div>
+								</div>
 							</div>
 							<div class="detail">壁やドア等の障害物が多い場所でも高速に繋がる親機と子機のセット</div>
 						</div>
@@ -385,7 +399,7 @@
 								<div class="price">
 									<div>月額￥350</div>
 									<div class="service-radio">
-										<input type="radio" id="internet-option-rd4" name="internet-option-radio-second">
+										<input type="radio" id="internet-option-rd4" name="internet-option-radio-second" checked>
 										<label for="internet-option-rd4"></label>
 									</div>
 								</div>
@@ -571,7 +585,7 @@
 						<div class="option-item">
 							<div class="title">7GB データプラン
 								<div class="price">
-									<div>月額￥2,280</div>
+									<div>月額￥2,480</div>
 									<div class="service-radio">
 										<input type="radio" id="cPhone-second-option-rd3" name="cPhone-second-option-radio-first"/>
 										<label for="cPhone-second-option-rd3"></label>
@@ -794,13 +808,13 @@
 							<div class="option-item tv-item">
 								<div class="plan-item">
 									<div></div>
-									<button onclick="changeTVService()">この項目を変更 &#x25b6;</button>	
+									<button>この項目を変更 &#x25b6;</button>	
 									<div class="name"><span>&#x25cf;</span><span></span></div>
 									<div class="price"></div>
 								</div>
 								<div class="plan-item">
 									<div></div>
-									<button onclick="changeTVOption()">この項目を変更 &#x25b6;</button>	
+									<button>この項目を変更 &#x25b6;</button>	
 									<div class="name"><span>&#x25cf;</span><span></span></div>
 									<div class="price"></div>
 								</div>
@@ -810,13 +824,13 @@
 							<div class="option-item internet-item">
 								<div class="plan-item">
 									<div></div>
-									<button onclick="changeInternetService()">この項目を変更 &#x25b6;</button>	
+									<button>この項目を変更 &#x25b6;</button>	
 									<div class="name"><span>&#x25cf;</span><span></span></div>
 									<div class="price"></div>
 								</div>
 								<div class="plan-item">
 									<div></div>
-									<button onclick="changeInternetOption()">この項目を変更 &#x25b6;</button>	
+									<button>この項目を変更 &#x25b6;</button>	
 									<div class="name"><span>&#x25cf;</span><span></span></div>
 									<div class="price"></div>
 								</div>
@@ -831,7 +845,7 @@
 							<div class="option-item hphone-item">
 								<div class="plan-item">
 									<div></div>
-									<button onclick="changeHPhoneService()">この項目を変更 &#x25b6;</button>	
+									<button>この項目を変更 &#x25b6;</button>	
 									<div class="name"><span>&#x25cf;</span><span></span></div>
 									<div class="price">￥1,330</div>
 								</div>
@@ -840,13 +854,13 @@
 							<div class="option-item cphone-item">
 								<div class="plan-item" style="display: flex;align-items: center;">
 									<div></div>
-									<button onclick="changeCPhoneService()">この項目を変更 &#x25b6;</button>	
+									<button>この項目を変更 &#x25b6;</button>	
 									<div class="name"><span>&#x25cf;</span><span></span></div>
 									<div class="price"></div>
 								</div>
 								<div class="plan-item" style="display: flex;align-items: center;">
 									<div></div>
-									<button onclick="changeCPhoneOption()">この項目を変更 &#x25b6;</button>	
+									<button>この項目を変更 &#x25b6;</button>	
 									<div class="name"><span>&#x25cf;</span><span></span></div>
 									<div class="price"></div>
 								</div>
@@ -861,7 +875,7 @@
 							<div class="option-item ott-item">
 								<div class="plan-item">
 									<div></div>
-									<button onclick="changeOttService()">この項目を変更 &#x25b6;</button>	
+									<button>この項目を変更 &#x25b6;</button>	
 									<div class="name"><span>&#x25cf;</span><span></span></div>
 									<div class="price"></div>
 								</div>
@@ -884,30 +898,38 @@
 						<div>※個人情報取扱についてはこちらのページをご覧ください。</div>
 					</div>
 					<div class="online-app-body">
+						<span class="alert-span">*この項目は必須です</span>
 						<div>
-							<input type="text" placeholder="お名前" name="name"/>
+							<input class="nameinput" type="text" placeholder="お名前" name="name"/>
 						</div>
+						<span class="alert-span">*この項目は必須です</span>
 						<div>
-							<input type="text" placeholder="電話番号" name="phonenumber" />
+							<input class="phoneinput" type="text" placeholder="電話番号" name="phonenumber" />
 						</div>
 						<div>
 							<span>連絡可能な時間帯</span>
 							<select>
 								<option>午前中</option>
-								<option>午前中</option>
-								<option>午前中</option>
+								<option>午後中</option>
 							</select>
 						</div>
+						<span class="alert-span">*この項目は必須です</span>
 						<div>
-							<input type="email" placeholder="E-mail" name="email"/>
+							<input class="emailinput" type="email" placeholder="E-mail" name="email"/>
 						</div>
 						<div>
-							<input type="text" placeholder="ご住所" name="address"/>
-							<select>
-								<option>一戸建て</option>
-								<option>一戸建て</option>
-								<option>一戸建て</option>
-							</select>
+							<div style="flex-direction: column;width: 100%;">
+								<span class="alert-span">*この項目は必須です</span>
+								<input class="addressinput" type="text" placeholder="ご住所" name="address"/>
+							</div>
+							<div style="flex-direction: column;width: 100%;">
+								<span class="alert-span">*この項目は必須です</span>
+								<select style="width: 100%;">
+									<option>一戸建て</option>
+									<option>集合住宅</option>
+									<option>その他</option>
+								</select>
+							</div>
 						</div>
 						<div>
 							<textarea placeholder="ご不明な点等"></textarea>
@@ -925,7 +947,7 @@
 						<div>ご契約はまだ完了していません。担当者よりご連絡させていただきます。</div>
 					</div>
 					<div class="thanks-page-next-btn">
-						<button>トップページへ戻る</button>
+						<button onclick="goToWebSite()">トップページへ戻る</button>
 					</div>
 				</section>
 
@@ -1015,6 +1037,8 @@
 				{ id: "internet-option-rd2", service_name: "インターネット", plan_name: "Wi-Fiレンタル", price: 300, enable: false, plan_type: "first", detail: "ONU 内蔵でこれ 1 台でお部屋スッキリ。" },
 				{ id: "internet-option-rd3", service_name: "インターネット", plan_name: "メッシュWi-Fiレンタル", price: 500, enable: false, plan_type: "first", detail: "壁やドア等の障害物が多い場所でも高速に繋がる親機と子機のセット" },
 				{ id: "internet-option-rd4", service_name: "インターネット", plan_name: "コミサポ", price: 350, enable: false, plan_type: "second", detail: "機器の接続や不具合、操作方法等、困ったときに月 3 回まですぐに駆けつけます。（必須）※最低利用期間 6ヶ月" },
+				{ id: "internet-option-rd5", service_name: "インターネット", plan_name: "Wi-Fiレンタル", price: 100, enable: false, plan_type: "first", detail: "ONU 内蔵でこれ 1 台でお部屋スッキリ。" },
+				{ id: "internet-option-rd6", service_name: "インターネット", plan_name: "メッシュWi-Fiレンタル", price: 200, enable: false, plan_type: "first", detail: "壁やドア等の障害物が多い場所でも高速に繋がる親機と子機のセット" },
 
 				{ id: "hPhone-service-rd1", service_name: "固定電話", plan_name: "ケーブルプラス電話", price: 1330, enable: true, plan_type: "", detail: "au をお使いの方に。固定電話と au 電話の通話が24 時間すべて無料になります。NTT 基本料より270 円お得。" },
 				{ id: "hPhone-service-rd2", service_name: "固定電話", plan_name: "ケーブルライン", price: 1290, enable: false, plan_type: "", detail: "softbank をお使いの方に。固定電話と softbank 電話の通話が 24 時間すべて無料。NTT 基本料より310 円お得。" },
@@ -1027,7 +1051,7 @@
 				{ id: "cPhone-option-rd4", service_name: "スマホ", plan_name: "1０分かけ放題", price: 850, plan_type: "音声プラン", enable: false, detail: "1 回 10 分までの通話が何度でもかけ放題"},
 				{ id: "cPhone-second-option-rd1", service_name: "スマホ", plan_name: "3GBデータプラン", price: 1280, plan_type: "データプラン", enable: true, detail: "あまりデータ通信を行わない方向け" },
 				{ id: "cPhone-second-option-rd2", service_name: "スマホ", plan_name: "5GBデータプラン", price: 1880, plan_type: "データプラン", enable: false, detail: "あまりデータ通信を行わない方向け" },
-				{ id: "cPhone-second-option-rd3", service_name: "スマホ", plan_name: "7GBデータプラン", price: 2280, plan_type: "データプラン", enable: false, detail: "あまりデータ通信を行わない方向け" },
+				{ id: "cPhone-second-option-rd3", service_name: "スマホ", plan_name: "7GBデータプラン", price: 2480, plan_type: "データプラン", enable: false, detail: "あまりデータ通信を行わない方向け" },
 				{ id: "cPhone-second-option-rd4", service_name: "スマホ", plan_name: "1０分かけ放題", price: 550, plan_type: "データプラン", enable: false, detail: "あまりデータ通信を行わない方向け" },
 
 				{ id: "ott-service-cb1", service_name: "OTT", plan_name: "A", price: 500, enable: true, plan_type: "", detail: "explanation about A" },
@@ -1052,6 +1076,9 @@
 				classname: "",
 				is_enable: false
 			}
+			var internetSecondOptionEnable = false;
+			var discountPrice;
+			var specialDiscountPrice;
 
 			function chooseService() {
 
@@ -1097,16 +1124,54 @@
 								if (checkedPlan[0] !== undefined) checkedPlan[0].enable = true
 								selectedPlan.push(checkedPlan[0])
 							}
+							console.log("selectedPlan=",selectedPlan)
+							console.log("enabledService=", enabledService)
 							
 							// Show or hide plan pages
 							document.querySelector(`#pw .service-choose ${enabledService[index].classname}`).style.display = "none"
-							console.log(index)
-
+							if (enabledService[index].classname === ".internet-service") {
+								if (document.getElementById("internet-service-rd1").checked) {
+									document.querySelector("#pw .service-choose .internet-option").style.display = "block"
+									document.querySelector("#pw > div > section.internet-option > div:nth-child(2) > div:nth-child(2) > div.title > div").style.display = "flex"
+									document.querySelector("#pw > div > section.internet-option > div:nth-child(2) > div:nth-child(3) > div.title > div").style.display = "flex"
+									document.querySelector("#pw > div > section.internet-option > div:nth-child(2) > div:nth-child(2) > div.title > div.price:nth-child(2)").style.display = "none"
+									document.querySelector("#pw > div > section.internet-option > div:nth-child(2) > div:nth-child(3) > div.title > div.price:nth-child(2)").style.display = "none"
+									return
+								}
+								if (document.getElementById("internet-service-rd2").checked || document.getElementById("internet-service-rd3")) {
+									document.querySelector("#pw .service-choose .internet-option").style.display = "block"
+									document.querySelector("#pw > div > section.internet-option > div:nth-child(2) > div:nth-child(2) > div.title > div").style.display = "none"
+									document.querySelector("#pw > div > section.internet-option > div:nth-child(2) > div:nth-child(3) > div.title > div").style.display = "none"
+									document.querySelector("#pw > div > section.internet-option > div:nth-child(2) > div:nth-child(2) > div.title > div.price:nth-child(2)").style.display = "flex"
+									document.querySelector("#pw > div > section.internet-option > div:nth-child(2) > div:nth-child(3) > div.title > div.price:nth-child(2)").style.display = "flex"
+									return
+								}
+							}
 							if (index === enabledService.length - 1) {
-								document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+								if ((selectedPlan.filter(plan => plan.id.search("tv-service") !== -1)).length !== 0 && 
+									(selectedPlan.filter(plan => plan.id.search("internet-service") !== -1)).length !== 0 &&
+									(selectedPlan.filter(plan => plan.id.search("hPhone-service") !== -1)).length !== 0
+									) {
+										document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+										return
+								}
+								if ((selectedPlan.filter(plan => plan.id.search("tv-service") !== -1)).length !== 0 &&
+									(selectedPlan.filter(plan => plan.id.search("internet-service") !== -1)).length !== 0
+									) {
+										document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+										return
+								}
+								if ((selectedPlan.filter(plan => plan.id.search("internet-service") !== -1)).length !== 0 &&
+									(selectedPlan.filter(plan => plan.id.search("hPhone-service") !== -1)).length !== 0
+									) {
+										document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+										return
+								}
+								goToTotalPrice()
 								return
 							}
 							else {
+								console.log("hhhhhhhhhhhhh")
 								if (enabledService[index].classname === ".cPhone-service" && allPlans.filter(item => item.id === checkedRadio[0].id)[0].plan_type === "音声プラン") {
 									document.querySelector(`#pw .service-choose ${enabledService[index + 1].classname}`).style.display = "block"
 									return
@@ -1117,7 +1182,30 @@
 								}
 								if (enabledService[index].classname === ".cPhone-option") {
 									if (enabledService[index+2] === undefined) {
-										document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+										// document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+										if ((selectedPlan.filter(plan => plan.id.search("tv-service") !== -1)).length !== 0 && 
+											(selectedPlan.filter(plan => plan.id.search("internet-service") !== -1)).length !== 0 &&
+											(selectedPlan.filter(plan => plan.id.search("hPhone-service") !== -1)).length !== 0
+											) {
+												console.log("eeeeeeeee")
+												document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+												return
+										}
+										if ((selectedPlan.filter(plan => plan.id.search("tv-service") !== -1)).length !== 0 &&
+											(selectedPlan.filter(plan => plan.id.search("internet-service") !== -1)).length !== 0
+											) {
+												console.log("wwwwwwwwww")
+												document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+												return
+										}
+										if ((selectedPlan.filter(plan => plan.id.search("internet-service") !== -1)).length !== 0 &&
+											(selectedPlan.filter(plan => plan.id.search("hPhone-service") !== -1)).length !== 0
+											) {
+												console.log("aaaaaaaaaa")
+												document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+												return
+										}
+										goToTotalPrice();
 										return
 									}else {
 										document.querySelector(`#pw .service-choose ${enabledService[index + 2].classname}`).style.display = "block"
@@ -1129,6 +1217,7 @@
 									return
 								}
 								document.querySelector(`#pw .service-choose ${enabledService[index + 1].classname}`).style.display = "block"
+
 								
 							}
 
@@ -1228,11 +1317,287 @@
 
 			// Total Price
 			function goToTotalPrice() {
+				
 				selectedPlan = selectedPlan.filter(item => item !== undefined)
 				console.log("selectedPlan=", selectedPlan)
 				enableValueOff = document.querySelector("#special-discount-yes").checked
+				
+				//Discount price setting
+				//TV & Internet & Phone set
+				if (selectedPlan.filter(item => item.id.search("tv-service-rd") !== -1).length !== 0 && 
+					selectedPlan.filter(item => item.id.search("internet-service") !== -1).length !== 0 &&
+					selectedPlan.filter(item => item.id.search("hPhone-service-rd") !== -1).length !== 0) {
+					
+					console.log("tv internet phone set")
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 4000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 690
+						specialDiscountPrice = 1387
+						
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 4000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 1050
+						specialDiscountPrice = 1387
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 4000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 1440
+						specialDiscountPrice = 0
+					}
+
+
+
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 3600 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 690
+						specialDiscountPrice = 1387
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 3600 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 1050
+						specialDiscountPrice = 1387
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 3600 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 1440
+						specialDiscountPrice = 0
+					}
+
+
+
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 2000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 690
+						specialDiscountPrice = 2087
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 2000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 1050
+						specialDiscountPrice = 2087
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 2000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 1440
+						specialDiscountPrice = 0
+					}
+
+
+
+
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 4000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 650
+						specialDiscountPrice = 1347
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 4000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 1010
+						specialDiscountPrice = 1347
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 4000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 1400
+						specialDiscountPrice = 0
+					}
+
+
+
+
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 3600 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 650
+						specialDiscountPrice = 1347
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 3600 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 1010
+						specialDiscountPrice = 1347
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 3600 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 1400
+						specialDiscountPrice = 0
+					}
+
+
+
+
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 2000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 650
+						specialDiscountPrice = 2047
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 2000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 1010
+						specialDiscountPrice = 2047
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 2000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 1400
+						specialDiscountPrice = 0
+					}
+				}
+
+				//TV & Internet set
+				if (selectedPlan.filter(item => item.id.search("tv-service-rd") !== -1).length !== 0 &&
+					selectedPlan.filter(item => item.id.search("internet-service") !== -1).length !== 0 &&
+					selectedPlan.filter(item => item.id.search("hPhone-service-rd") !== -1).length === 0) {
+						
+					console.log("tv internet set")
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 4000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1).length === 0) {
+						discountPrice = 350
+						specialDiscountPrice = 0
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 4000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1).length === 5500) {
+						discountPrice = 675
+						specialDiscountPrice = 0
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 4000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1).length === 0) {
+						discountPrice = 1100
+						specialDiscountPrice = 0
+					}
+
+
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 3600 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1).length === 0) {
+						discountPrice = 350
+						specialDiscountPrice = 0
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 3600 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1).length === 5500) {
+						discountPrice = 675
+						specialDiscountPrice = 0
+						
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 3600 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1).length === 0) {
+						discountPrice = 1100
+						specialDiscountPrice = 0
+					}
+
+
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 2000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1).length === 0) {
+						discountPrice = 350
+						specialDiscountPrice = 0
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 2000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1).length === 5500) {
+						discountPrice = 675
+						specialDiscountPrice = 0
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1)[0].price === 2000 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1).length === 0) {
+						discountPrice = 1100
+						specialDiscountPrice = 0
+					}
+				}
+
+				//Internet & Phone set
+				if (selectedPlan.filter(item => item.id.search("tv-service-rd") !== -1).length === 0 &&
+					selectedPlan.filter(item => item.id.search("internet-service") !== -1).length !== 0 &&
+					selectedPlan.filter(item => item.id.search("hPhone-service-rd") !== -1).length !== 0) {
+
+					console.log("internet phone set")
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1).length === 0 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 215
+						specialDiscountPrice = 1039
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1).length === 0 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 355
+						specialDiscountPrice = 1039
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1).length === 0 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1330) {
+						discountPrice = 590
+						specialDiscountPrice = 1039
+					}
+
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1).length === 0 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 3500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 175
+						specialDiscountPrice = 999
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1).length === 0 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 4500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 315
+						specialDiscountPrice = 999
+					}
+					if (selectedPlan.filter(item=>item.id.search("tv-service-rd") !== -1).length === 0 &&
+						selectedPlan.filter(item=>item.id.search("internet-service") !== -1)[0].price === 5500 &&
+						selectedPlan.filter(item=>item.id.search("hPhone-service-rd") !== -1)[0].price === 1290) {
+						discountPrice = 550
+						specialDiscountPrice = 999
+					}
+				}
+
+					
+					
+				
 				document.querySelector("#pw .service-choose .special-discount").style.display = "none"
+				
+				
+				console.log("specialDiscountPrice=", specialDiscountPrice)
+				console.log("discountPrice=", discountPrice)
+				if (specialDiscountPrice === undefined) {
+					document.querySelector("#pw section.total-price div.total-price-body div.off-value").style.display = "none"
+				}
+				if (!enableValueOff) {
+					document.querySelector("#pw section.total-price div.total-price-body div.off-value div:nth-child(1)").innerHTML = "セット割引 ￥"+ discountPrice +"&nbsp;&nbsp;OFF"
+					document.querySelector("#pw section.total-price div.total-price-body div.off-value div:nth-child(1)").style.display = "block"
+					specialDiscountPrice = 0
+					document.querySelector("#pw section.total-price div.total-price-body div.off-value div:nth-child(2)").style.display = "none"
+				}else {
+					document.querySelector("#pw section.total-price div.total-price-body div.off-value div:nth-child(1)").innerHTML = "セット割引 ￥"+ discountPrice + "&nbsp;&nbsp;&nbsp;OFF"
+					document.querySelector("#pw section.total-price div.total-price-body div.off-value div:nth-child(1)").style.display = "block"
+					document.querySelector("#pw section.total-price div.total-price-body div.off-value div:nth-child(2)").innerHTML = "さらに得割 ￥" + specialDiscountPrice + "&nbsp;&nbsp;OFF"
+					document.querySelector("#pw section.total-price div.total-price-body div.off-value div:nth-child(2)").style.display = "block"
+				}
+
+				if (specialDiscountPrice === 0) {
+					document.querySelector("#pw section.total-price div.total-price-body div.off-value div:nth-child(2)").style.display = "none"
+				}
 				document.querySelector("#pw .service-choose .total-price").style.display = "block"
+
 				
 				// Insert all plan details to page
 				document.querySelector("#pw section.total-price div.total-price-body div.tv-item").style.display = "none"
@@ -1337,22 +1702,51 @@
 					if (selectedPlan[index].price === "") continue
 					totalPriceValue  = totalPriceValue + selectedPlan[index].price
 				}
-				if (enableValueOff) {
-					totalPriceValue = totalPriceValue - 690 - 1387
+				if (specialDiscountPrice !== undefined && discountPrice !== undefined) {
+					totalPriceValue = totalPriceValue - discountPrice - specialDiscountPrice;
 				}
+				
 				document.querySelector("#pw section.total-price div.total-price-body .price-value").innerHTML = `合計月額 ￥${totalPriceValue.toLocaleString('en')}（税別）`
 
-				// display value off option or not
-				if (!enableValueOff) {
-					document.querySelector("#pw .service-choose .total-price .total-price-body .off-value").style.display = "none"
-				}else {
-					document.querySelector("#pw .service-choose .total-price .total-price-body .off-value").style.display = "flex"
-				}
+				
 			}
 			
 			function backToSpecialDiscount() {
-				document.querySelector("#pw .service-choose .special-discount").style.display = "block"
-				document.querySelector("#pw .service-choose .total-price").style.display = "none"
+				if ((selectedPlan.filter(plan => plan.id.search("tv-service") !== -1)).length !== 0 && 
+					(selectedPlan.filter(plan => plan.id.search("internet-service") !== -1)).length !== 0 &&
+					(selectedPlan.filter(plan => plan.id.search("hPhone-service") !== -1)).length !== 0
+					) {
+						document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+						document.querySelector("#pw .service-choose .total-price").style.display = "none"
+						return
+				}
+				if ((selectedPlan.filter(plan => plan.id.search("tv-service") !== -1)).length !== 0 &&
+					(selectedPlan.filter(plan => plan.id.search("internet-service") !== -1)).length !== 0
+					) {
+						document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+						document.querySelector("#pw .service-choose .total-price").style.display = "none"
+						return
+				}
+				if ((selectedPlan.filter(plan => plan.id.search("internet-service") !== -1)).length !== 0 &&
+					(selectedPlan.filter(plan => plan.id.search("hPhone-service") !== -1)).length !== 0
+					) {
+						document.querySelector("#pw .service-choose .special-discount").style.display = "block"
+						document.querySelector("#pw .service-choose .total-price").style.display = "none"
+						return
+				}else {
+					document.querySelector("#pw .service-choose .total-price").style.display = "none"
+					var lastSP = selectedPlan[selectedPlan.length-1].id
+					if (lastSP.indexOf("-rd") !== -1) {
+						lastSP = lastSP.slice(0, lastSP.indexOf("-rd"))
+					}
+					else if (lastSP.indexOf("-cb") !== -1) {
+						lastSP = lastSP.slice(0, lastSP.indexOf("-cb"))
+					}					
+					selectedPlan = selectedPlan.filter(item => item.id.search(lastSP) === -1)
+					lastSP = "." + lastSP
+					document.querySelector(`#pw .service-choose ${lastSP}`).style.display = "block"
+				}
+				
 			}
 
 			// Change plan items
@@ -1408,87 +1802,121 @@
 			// Call Us
 			function showCallUs() {
 				document.querySelector("#pw .service-choose .total-price").style.display = "none"
+				console.log("kkkkkkk=", specialDiscountPrice)
+				if (specialDiscountPrice === undefined) {
+					specialDiscountPrice = 0
+					discountPrice = 0
+					console.log("wwefwefwefwjjhp[")
+					document.querySelector("#pw .call-us .print-preview div.off-value").style.display = "none"
+				}else {
+					if (!enableValueOff) {
+						document.querySelector("#pw .call-us .print-preview div.off-value div:nth-child(1)").innerHTML = "セット割引 ￥"+ discountPrice +"&nbsp;&nbsp;OFF"
+						document.querySelector("#pw .call-us .print-preview div.off-value div:nth-child(1)").style.display = "block"
+						specialDiscountPrice = 0
+						document.querySelector("#pw .call-us .print-preview div.off-value div:nth-child(2)").style.display = "none"
+					}else {
+						document.querySelector("#pw .call-us .print-preview div.off-value div:nth-child(1)").innerHTML = "セット割引 ￥"+ discountPrice + "&nbsp;&nbsp;&nbsp;OFF"
+						document.querySelector("#pw .call-us .print-preview div.off-value div:nth-child(1)").style.display = "block"
+						document.querySelector("#pw .call-us .print-preview div.off-value div:nth-child(2)").innerHTML = "さらに得割 ￥" + specialDiscountPrice + "&nbsp;&nbsp;OFF"
+						document.querySelector("#pw .call-us .print-preview div.off-value div:nth-child(2)").style.display = "block"
+					}
+				}
 				document.querySelector("#pw .service-choose .call-us").style.display = "block"
+
 				// Insert all plan details to page
-				document.querySelector("#pw section.call-us div.print-preview div.tv-item").style.display = "none"
-				document.querySelector("#pw section.call-us div.print-preview div.internet-item").style.display = "none"
-				document.querySelector("#pw section.call-us div.print-preview div.hphone-item").style.display = "none"
-				document.querySelector("#pw section.call-us div.print-preview div.cphone-item").style.display = "none"
-				document.querySelector("#pw section.call-us div.print-preview div.ott-item").style.display = "none"
+				document.querySelector("#pw .call-us .print-preview div.tv-item").style.display = "none"
+				document.querySelector("#pw .call-us .print-preview div.internet-item").style.display = "none"
+				document.querySelector("#pw .call-us .print-preview div.hphone-item").style.display = "none"
+				document.querySelector("#pw .call-us .print-preview div.cphone-item").style.display = "none"
+				document.querySelector("#pw .call-us .print-preview div.ott-item").style.display = "none"
 				
 				var checkedService = selectedPlan.filter(item => item.id.search("tv-service") !== -1)
 				if (checkedService.length !== 0) {
-					document.querySelector("#pw section.call-us div.print-preview div.tv-item").style.display = "block"
-					document.querySelector("#pw section.call-us div.print-preview div.tv-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
-					document.querySelector("#pw section.call-us div.print-preview div.tv-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.tv-item div.plan-item:nth-child(1) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.tv-item").style.display = "block"
+					document.querySelector("#pw .call-us .print-preview div.tv-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
+					document.querySelector("#pw .call-us .print-preview div.tv-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.tv-item div.plan-item:nth-child(1) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
 				}
 				checkedService = selectedPlan.filter(item => item.id.search("tv-option") !== -1)
 				if (checkedService.length !==0) {
-					document.querySelector("#pw section.call-us div.print-preview div.tv-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.tv-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.tv-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.tv-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
 				}
 
 
 				checkedService = selectedPlan.filter(item => item.id.search("internet-service") !== -1)
 				if (checkedService.length !== 0) {
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item").style.display = "block"
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(1) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.internet-item").style.display = "block"
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(1) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
 				}
 				checkedService = selectedPlan.filter(item => item.id.search("internet-option") !== -1)
 				if (checkedService.length == 1) {
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(3)").style.display = "none"
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(3)").style.display = "none"
 				}
 				if (checkedService.length == 2) {
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(3)").style.display = "flex"
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(3) div.name span:nth-child(2)").innerHTML = checkedService[1].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
-					document.querySelector("#pw section.call-us div.print-preview div.internet-item div.plan-item:nth-child(3) div.price").innerHTML = "￥" + checkedService[1].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(3)").style.display = "flex"
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(3) div.name span:nth-child(2)").innerHTML = checkedService[1].plan_name
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.internet-item div.plan-item:nth-child(3) div.price").innerHTML = "￥" + checkedService[1].price.toLocaleString('en')
 				}
 
 
 				checkedService = selectedPlan.filter(item => item.id.search("hPhone-service") !== -1)
 				if (checkedService.length == 1) {
-					document.querySelector("#pw section.call-us div.print-preview div.hphone-item").style.display = "block"
-					document.querySelector("#pw section.call-us div.print-preview div.hphone-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
-					document.querySelector("#pw section.call-us div.print-preview div.hphone-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.hphone-item div.plan-item:nth-child(1) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.hphone-item").style.display = "block"
+					document.querySelector("#pw .call-us .print-preview div.hphone-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
+					document.querySelector("#pw .call-us .print-preview div.hphone-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.hphone-item div.plan-item:nth-child(1) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
 				
 				}
 
 				checkedService = selectedPlan.filter(item => item.id.search("cPhone-service") !== -1)
 				if (checkedService.length == 1) {
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item").style.display = "block"
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_type
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(1) div.price").innerHTML = ""
+					document.querySelector("#pw .call-us .print-preview div.cphone-item").style.display = "block"
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_type
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(1) div.price").innerHTML = ""
 				}
 				checkedService = selectedPlan.filter(item => item.id.search("cPhone-option") !== -1)
 				if (checkedService.length == 1) {
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(3)").style.display = "none"
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(3)").style.display = "none"
 				}
 				if (checkedService.length == 2) {
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(3)").style.display = "flex"
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(3) div.name span:nth-child(2)").innerHTML = checkedService[1].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
-					document.querySelector("#pw section.call-us div.print-preview div.cphone-item div.plan-item:nth-child(3) div.price").innerHTML = "￥" + checkedService[1].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(3)").style.display = "flex"
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(3) div.name span:nth-child(2)").innerHTML = checkedService[1].plan_name
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(3) div.price").innerHTML = "￥" + checkedService[1].price.toLocaleString('en')
 				}
+				checkedService = selectedPlan.filter(item => item.id.search("cPhone-second-option") !== -1)
+				if (checkedService.length == 1) {
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(3)").style.display = "none"
+				}
+				if (checkedService.length == 2) {
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(3)").style.display = "flex"
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(2) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(3) div.name span:nth-child(2)").innerHTML = checkedService[1].plan_name
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(2) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.cphone-item div.plan-item:nth-child(3) div.price").innerHTML = "￥" + checkedService[1].price.toLocaleString('en')
+				}
+
 
 
 				checkedService = selectedPlan.filter(item => item.id.search("ott-service") !== -1)
 				if (checkedService.length !== 0) {
-					document.querySelector("#pw section.call-us div.print-preview div.ott-item").style.display = "block"
-					document.querySelector("#pw section.call-us div.print-preview div.ott-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
-					document.querySelector("#pw section.call-us div.print-preview div.ott-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
-					document.querySelector("#pw section.call-us div.print-preview div.ott-item div.plan-item:nth-child(1) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
+					document.querySelector("#pw .call-us .print-preview div.ott-item").style.display = "block"
+					document.querySelector("#pw .call-us .print-preview div.ott-item div.plan-item:nth-child(1) div:nth-child(1)").innerHTML = checkedService[0].service_name
+					document.querySelector("#pw .call-us .print-preview div.ott-item div.plan-item:nth-child(1) div.name span:nth-child(2)").innerHTML = checkedService[0].plan_name
+					document.querySelector("#pw .call-us .print-preview div.ott-item div.plan-item:nth-child(1) div.price").innerHTML = "￥" + checkedService[0].price.toLocaleString('en')
 				
 				}
 				
@@ -1498,17 +1926,10 @@
 					if (selectedPlan[index].price === "") continue
 					totalPriceValue  = totalPriceValue + selectedPlan[index].price
 				}
-				if (enableValueOff) {
-					totalPriceValue = totalPriceValue - 690 - 1387
-				}
-				document.querySelector("#pw section.call-us div.print-preview .price-value").innerHTML = `合計月額 ￥${totalPriceValue.toLocaleString('en')}（税別）`
-
-				// display value off option or not
-				if (!enableValueOff) {
-					document.querySelector("#pw .service-choose .total-price .total-price-body .off-value").style.display = "none"
-				}else {
-					document.querySelector("#pw .service-choose .total-price .total-price-body .off-value").style.display = "flex"
-				}
+				
+				totalPriceValue = totalPriceValue - discountPrice - specialDiscountPrice;
+				document.querySelector("#pw .call-us .print-preview .price-value").innerHTML = `合計月額 ￥${totalPriceValue.toLocaleString('en')}（税別）`
+				
 			}
 			function printInvoice() {
 				console.log($("#pw .call-us-body .print-preview"))
@@ -1523,8 +1944,44 @@
 
 			// Thanks Page
 			function showThanksPage() {
-				document.querySelector("#pw .service-choose .online-app").style.display = "none"
-				document.querySelector("#pw .service-choose .thanks-page").style.display = "block"
+				if (document.querySelector("#pw section.online-app div.online-app-body .nameinput").value === "") {
+					document.querySelectorAll("#pw section.online-app div.online-app-body .alert-span")[0].style.visibility = "unset"
+				}else {
+					document.querySelectorAll("#pw section.online-app div.online-app-body .alert-span")[0].style.visibility = "hidden"
+				}
+				if (document.querySelector("#pw section.online-app div.online-app-body .phoneinput").value === "") {
+					document.querySelectorAll("#pw section.online-app div.online-app-body .alert-span")[1].style.visibility = "unset"
+				}else {
+					document.querySelectorAll("#pw section.online-app div.online-app-body .alert-span")[1].style.visibility = "hidden"
+				}
+				
+				if (document.querySelector("#pw section.online-app div.online-app-body .emailinput").value === "") {
+					document.querySelectorAll("#pw section.online-app div.online-app-body .alert-span")[2].style.visibility = "unset"
+				}else {
+					document.querySelectorAll("#pw section.online-app div.online-app-body .alert-span")[2].style.visibility = "hidden"
+				}
+				
+				if (document.querySelector("#pw section.online-app div.online-app-body .addressinput").value === "") {
+					document.querySelectorAll("#pw section.online-app div.online-app-body .alert-span")[3].style.visibility = "unset"
+				}else {
+					document.querySelectorAll("#pw section.online-app div.online-app-body .alert-span")[3].style.visibility = "hidden"
+				}
+
+				if (document.querySelector("#pw section.online-app div.online-app-body .nameinput").value !== "" &&
+					document.querySelector("#pw section.online-app div.online-app-body .phoneinput").value !== "" &&
+					document.querySelector("#pw section.online-app div.online-app-body .emailinput").value !== "" &&
+					document.querySelector("#pw section.online-app div.online-app-body .addressinput").value !== "") {
+
+						document.querySelector("#pw .service-choose .online-app").style.display = "none"
+						document.querySelector("#pw .service-choose .thanks-page").style.display = "block"
+					}else {
+						window.alert("いくつかの必須項目が入力されていません。")
+					}
+				
+			}
+
+			function goToWebSite() {
+				window.location.href = "https://www.octv.jp/"
 			}
 
 			// Set all services and options display none

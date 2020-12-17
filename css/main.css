@@ -281,392 +281,118 @@
     border: 1px solid;
     padding: 0px 5% 15px 5%;
 }
-#pw .internet-service .internet-service-body .internet-service-item .title {
-    margin: 20px 0px 20px 0px;
-}
-#pw .internet-service .internet-service-body .internet-service-item .detail {
-    font-size: 15px;
-}
-#pw .internet-service .internet-service-body .internet-service-item .price {
-    margin: 30px 0px 15px 0px;
-}
+#pw .internet-service .internet-service-body .internet-service-item .title {margin: 20px 0px 20px 0px;}
+#pw .internet-service .internet-service-body .internet-service-item .detail {font-size: 15px;}
+#pw .internet-service .internet-service-body .internet-service-item .price {margin: 30px 0px 15px 0px;}
 
 /* Internet Option */
-#pw .internet-option {
-    display: none;
-}
-#pw .internet-option .internet-option-body {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    border: 1px solid;
-    padding: 20px 10px 20px 10px;
-}
-#pw .internet-option .internet-option-body .option-item .title{
-    display: flex;
-    align-items: center;
-}
-#pw .internet-option .internet-option-body .option-item .price {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-#pw .internet-option .internet-option-body .option-item .price div:first-child {
-    margin-right: 10px;
-}
-#pw .internet-option .internet-option-body .option-item .detail {
-    font-size: 15px;
-    text-align: left;
-}
+#pw .internet-option {display: none;}
+#pw .internet-option .internet-option-body {margin-top: 40px;margin-bottom: 30px;border: 1px solid;padding: 20px 10px 20px 10px;}
+#pw .internet-option .internet-option-body .option-item .title{display: flex;align-items: center;}
+#pw .internet-option .internet-option-body .option-item .price {display: flex;align-items: center;margin-left: auto;}
+#pw .internet-option .internet-option-body .option-item .price div:first-child {margin-right: 10px;}
+#pw .internet-option .internet-option-body .option-item .detail {font-size: 15px;text-align: left;}
 
 /* Home Phone Service */
-#pw .hPhone-service {
-    display: none;
-}
-#pw .hPhone-service .hPhone-service-body {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-#pw .hPhone-service .hPhone-service-body .hPhone-service-item {
-    width: 20%;
-    border: 1px solid;
-    padding: 0px 5% 15px 5%;
-}
-#pw .hPhone-service .hPhone-service-body .hPhone-service-item .title {
-    margin: 20px 0px 20px 0px;
-}
-#pw .hPhone-service .hPhone-service-body .hPhone-service-item .detail {
-    font-size: 15px;
-}
-#pw .hPhone-service .hPhone-service-body .hPhone-service-item .price {
-    margin: 30px 0px 15px 0px;
-}
+#pw .hPhone-service {display: none;}
+#pw .hPhone-service .hPhone-service-body {display: flex;justify-content: center;width: 100%;margin-top: 40px;margin-bottom: 30px;}
+#pw .hPhone-service .hPhone-service-body .hPhone-service-item {width: 20%;border: 1px solid;padding: 0px 5% 15px 5%;}
+#pw .hPhone-service .hPhone-service-body .hPhone-service-item .title {margin: 20px 0px 20px 0px;}
+#pw .hPhone-service .hPhone-service-body .hPhone-service-item .detail {font-size: 15px;}
+#pw .hPhone-service .hPhone-service-body .hPhone-service-item .price {margin: 30px 0px 15px 0px;}
 
 /* Cell Phone Service */
-#pw .cPhone-service {
-    display: none;
-}
-#pw .cPhone-service .cPhone-service-body {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-#pw .cPhone-service .cPhone-service-body .cPhone-service-item {
-    width: 20%;
-    border: 1px solid;
-    padding: 0px 5% 15px 5%;
-}
-#pw .cPhone-service .cPhone-service-body .cPhone-service-item .title {
-    margin: 20px 0px 20px 0px;
-}
-#pw .cPhone-service .cPhone-service-body .cPhone-service-item .detail {
-    font-size: 15px;
-    margin-bottom: 80px;
-}
+#pw .cPhone-service {display: none;}
+#pw .cPhone-service .cPhone-service-body {display: flex;justify-content: center;width: 100%;margin-top: 40px;margin-bottom: 30px;}
+#pw .cPhone-service .cPhone-service-body .cPhone-service-item {width: 20%;border: 1px solid;padding: 0px 5% 15px 5%;}
+#pw .cPhone-service .cPhone-service-body .cPhone-service-item .title {margin: 20px 0px 20px 0px;}
+#pw .cPhone-service .cPhone-service-body .cPhone-service-item .detail {font-size: 15px;margin-bottom: 80px;}
 
 
 /* Cell Phone Option */
 /* Voice Plan */
-#pw .cPhone-option {
-    display: none;
-}
-#pw .cPhone-option .cPhone-option-body {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    border: 1px solid;
-    padding: 20px 10px 20px 10px;
-}
-#pw .cPhone-option .cPhone-option-body .option-item .title{
-    display: flex;
-    align-items: center;
-}
-#pw .cPhone-option .cPhone-option-body .option-item .price {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-#pw .cPhone-option .cPhone-option-body .option-item .price div:first-child {
-    margin-right: 10px;
-}
-#pw .cPhone-option .cPhone-option-body .option-item .detail {
-    font-size: 15px;
-    text-align: left;
-}
+#pw .cPhone-option {display: none;}
+#pw .cPhone-option .cPhone-option-body {margin-top: 40px;margin-bottom: 30px;border: 1px solid;padding: 20px 10px 20px 10px;}
+#pw .cPhone-option .cPhone-option-body .option-item .title{display: flex;align-items: center;}
+#pw .cPhone-option .cPhone-option-body .option-item .price {display: flex;align-items: center;margin-left: auto;}
+#pw .cPhone-option .cPhone-option-body .option-item .price div:first-child {margin-right: 10px;}
+#pw .cPhone-option .cPhone-option-body .option-item .detail {font-size: 15px;text-align: left;}
 
 /* Data Plan */
-.cPhone-second-option {
-    display: none;
-}
-#pw .cPhone-second-option .cPhone-option-body {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    border: 1px solid;
-    padding: 20px 10px 20px 10px;
-}
-#pw .cPhone-second-option .cPhone-option-body .option-item .title{
-    display: flex;
-    align-items: center;
-}
-#pw .cPhone-second-option .cPhone-option-body .option-item .price {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-#pw .cPhone-second-option .cPhone-option-body .option-item .price div:first-child {
-    margin-right: 10px;
-}
-#pw .cPhone-second-option .cPhone-option-body .option-item .detail {
-    font-size: 15px;
-    text-align: left;
-}
+.cPhone-second-option {display: none;}
+#pw .cPhone-second-option .cPhone-option-body {margin-top: 40px;margin-bottom: 30px;border: 1px solid;padding: 20px 10px 20px 10px;}
+#pw .cPhone-second-option .cPhone-option-body .option-item .title{display: flex;align-items: center;}
+#pw .cPhone-second-option .cPhone-option-body .option-item .price {display: flex;align-items: center;margin-left: auto;}
+#pw .cPhone-second-option .cPhone-option-body .option-item .price div:first-child {margin-right: 10px;}
+#pw .cPhone-second-option .cPhone-option-body .option-item .detail {font-size: 15px;text-align: left;}
 
 /* OTT Service */
-#pw .ott-service {
-    display: none;
-}
-#pw .ott-service .ott-service-body {
-    display: flex;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-#pw .ott-service .ott-service-body .ott-service-item {
-    width: 30%;
-    border: 1px solid;
-    padding: 0px 5% 15px 5%;
-}
-#pw .ott-service .ott-service-body .ott-service-item .title {
-    margin: 20px 0px 20px 0px;
-}
-#pw .ott-service .ott-service-body .ott-service-item .detail {
-    font-size: 15px;
-}
-#pw .ott-service .ott-service-body .ott-service-item .price {
-    margin: 30px 0px 15px 0px;
-}
+#pw .ott-service {display: none;}
+#pw .ott-service .ott-service-body {display: flex;width: 100%;margin-top: 40px;margin-bottom: 30px;}
+#pw .ott-service .ott-service-body .ott-service-item {width: 30%;border: 1px solid;padding: 0px 5% 15px 5%;}
+#pw .ott-service .ott-service-body .ott-service-item .title {margin: 20px 0px 20px 0px;}
+#pw .ott-service .ott-service-body .ott-service-item .detail {font-size: 15px;}
+#pw .ott-service .ott-service-body .ott-service-item .price {margin: 30px 0px 15px 0px;}
 
 /* Special Discount */
-#pw .special-discount {
-    display: none;
-}
-#pw .special-discount .special-discount-detail {
-    margin-top: 20px;
-    font-size: 15px;
-}
+#pw .special-discount {display: none;}
+#pw .special-discount .special-discount-detail {margin-top: 20px;font-size: 15px;}
 
 /* Total Price */
-#pw .total-price {
-    display: none;
-}
-#pw .total-price .total-price-body {
-    margin-top: 30px;
-}
-#pw .total-price .total-price-body .option-item .plan-item {
-    display: flex;
-    align-items: center;
-}
-#pw .total-price .total-price-body .option-item .plan-item div:first-child {
-    font-size: 20px;
-    width: 200px;
-    text-align: left;
-}
-#pw .total-price .total-price-body .option-item .plan-item button {
-    background-color:black;
-    color:white; 
-    font-size: 12px;
-    margin-right: 0px;
-    margin-left: 0px;
-}
-#pw .total-price .total-price-body .option-item .plan-item .name {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    margin-right:auto
-}
-#pw .total-price .total-price-body .option-item .plan-item .name span:first-child {
-    font-size: 12px;
-    margin-right: 5px;
-}
-#pw .total-price .total-price-body .option-item .plan-item .name span:nth-child(2) {
-    font-size: 15px;
-}
-#pw .total-price .total-price-body .option-item .plan-item .price {
-    font-size: 20px;
-}
-#pw .total-price-body .off-value {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-#pw .total-price-body .off-value div {
-    font-size: 22px;
-    width: 250px;
-    border: 1px solid;
-    background-color: #EEEEEE;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-#pw .total-price-body .price-value {
-    margin-top: 15px;
-}
-#pw .total-price-body .total-price-next-btn {
-    margin-top: 15px;
-}
-#pw .total-price-body .total-price-next-btn button {
-    background: black;
-    color: white;
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 49%;
-}
+#pw .total-price {display: none;}
+#pw .total-price .total-price-body {margin-top: 30px;}
+#pw .total-price .total-price-body .option-item .plan-item {display: flex;align-items: center;}
+#pw .total-price .total-price-body .option-item .plan-item div:first-child {font-size: 20px;width: 200px;text-align: left;}
+#pw .total-price .total-price-body .option-item .plan-item button {background-color:black;color:white;font-size: 12px;margin-right: 0px;margin-left: 0px;}
+#pw .total-price .total-price-body .option-item .plan-item .name {display: flex;align-items: center;margin-left: 10px;margin-right:auto}
+#pw .total-price .total-price-body .option-item .plan-item .name span:first-child {font-size: 12px;margin-right: 5px;}
+#pw .total-price .total-price-body .option-item .plan-item .name span:nth-child(2) {font-size: 15px;}
+#pw .total-price .total-price-body .option-item .plan-item .price {font-size: 20px;}
+#pw .total-price-body .off-value {margin-top: 30px;display: flex;justify-content: center;}
+#pw .total-price-body .off-value div {font-size: 22px;width: 250px;border: 1px solid;background-color: #EEEEEE;margin-left: 5px;margin-right: 5px;}
+#pw .total-price-body .price-value {margin-top: 15px;}
+#pw .total-price-body .total-price-next-btn {margin-top: 15px;}
+#pw .total-price-body .total-price-next-btn button {background: black;color: white;font-size: 20px;padding-top: 5px;padding-bottom: 5px;width: 49%;}
 
 /* Call US */
-#pw .call-us {
-    display: none;
-}
-#pw .call-us-title div:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-#pw .call-us-title div:first-child img {
-    margin-left: 20px;
-}
-#pw .call-us-title div:first-child span {
-    font-size: 40px;
-    font-weight: bold;
-}
-#pw .call-us-title div:last-child {
-    font-size: 15px;
-}
-#pw .call-us-body .print-btn {
-    display: flex;
-    align-items: center;
-}
-#pw .call-us-body .print-btn button {
-    margin-left: auto;
-    margin-right: 0px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-}
-#pw .call-us-body .print-btn button i {
-    margin-right: 20px;
-}
+#pw .call-us {display: none;}
+#pw .call-us .print-preview button {visibility: hidden;}
+#pw .call-us-title div:first-child {display: flex;align-items: center;justify-content: center;font-size: 30px;font-weight: bold;}
+#pw .call-us-title div:first-child img {margin-left: 20px;}
+#pw .call-us-title div:first-child span {font-size: 40px;font-weight: bold;}
+#pw .call-us-title div:last-child {font-size: 15px;}
+#pw .call-us-body .print-btn {display: flex;align-items: center;}
+#pw .call-us-body .print-btn button {margin-left: auto;margin-right: 0px;background-color: black;color: white;font-size: 20px;}
+#pw .call-us-body .print-btn button i {margin-right: 20px;}
     /* Print Preview */
-#pw .call-us .print-preview .option-item .plan-item {
-    display: flex;
-    align-items: center;
-}
-#pw .call-us .print-preview .option-item .plan-item div:first-child {
-    font-size: 20px;
-    width: 200px;
-    text-align: left;
-}
-#pw .call-us .print-preview .option-item .plan-item button {
-    background-color:black;
-    color:white; 
-    font-size: 12px;
-    margin-right: 0px;
-    margin-left: 0px;
-}
-#pw .call-us .print-preview .option-item .plan-item .name {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    margin-right:auto
-}
-#pw .call-us .print-preview .option-item .plan-item .name span:first-child {
-    font-size: 12px;
-    margin-right: 5px;
-}
-#pw .call-us .print-preview .option-item .plan-item .name span:nth-child(2) {
-    font-size: 15px;
-}
-#pw .call-us .print-preview .option-item .plan-item .price {
-    font-size: 20px;
-}
-#pw .call-us .print-preview .off-value {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-#pw .call-us .print-preview .off-value div {
-    font-size: 22px;
-    width: 250px;
-    border: 1px solid;
-    background-color: #EEEEEE;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-#pw .call-us .print-preview .price-value {
-    margin-top: 15px;
-}
+#pw .call-us .print-preview .option-item .plan-item {display: flex;align-items: center;}
+#pw .call-us .print-preview .option-item .plan-item div:first-child {font-size: 20px;width: 200px;text-align: left;}
+#pw .call-us .print-preview .option-item .plan-item button {background-color:black;color:white;font-size: 12px;margin-right: 0px;margin-left: 0px;cursor: unset;}
+#pw .call-us .print-preview .option-item .plan-item .name {display: flex;align-items: center;margin-left: 10px;margin-right:auto}
+#pw .call-us .print-preview .option-item .plan-item .name span:first-child {font-size: 12px;margin-right: 5px;}
+#pw .call-us .print-preview .option-item .plan-item .name span:nth-child(2) {font-size: 15px;}
+#pw .call-us .print-preview .option-item .plan-item .price {font-size: 20px;}
+#pw .call-us .print-preview .off-value {margin-top: 30px;display: flex;justify-content: center;}
+#pw .call-us .print-preview .off-value div {font-size: 22px;width: 250px;border: 1px solid;background-color: #EEEEEE;
+                                            margin-left: 5px;margin-right: 5px;}
+#pw .call-us .print-preview .price-value {margin-top: 15px;}
 
 
 /* Online Application */
-#pw .online-app {
-    display: none;
-}
-#pw .online-app-title div:last-child {
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-#pw .online-app-body {
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-}
-#pw .online-app-body div {
-    display: flex;
-}
-#pw .online-app-body div:nth-child(3) {
-    margin-bottom: 15px;
-}
-#pw .online-app-body input{
-    font-size: 20px;
-    border: 1px solid;
-    padding-left: 5px;
-}
+#pw .online-app {display: none;}
+#pw .online-app-title div:last-child {font-size: 15px;margin-top: 20px;margin-bottom: 30px;}
+#pw .online-app-body {width: 70%;margin-right: auto;margin-left: auto;}
+#pw .online-app-body div {display: flex;}
+#pw .online-app-body div:nth-child(3) {margin-bottom: 15px;}
+#pw .online-app-body input{font-size: 18px;border: 1px solid;padding-left: 5px;}
 #pw .online-app-body input[name="name"],
 #pw .online-app-body input[name="phonenumber"],
-#pw .online-app-body input[name="email"] {
-    width: 100%;
-    margin-bottom: 15px;
-
-}
-#pw .online-app-body input[name="address"] {
-    margin-right: 20px;
-}
-#pw .online-app-body select {
-    font-size: 22px;
-    margin-left: auto;
-    width: calc(100% - 200px);
-}
-#pw .online-app-body textarea {
-    margin-top: 15px;
-    margin-bottom: 30px;
-    padding-left: 10px;
-    width: 100%;
-    height: 200px;
-    font-size: 15px;
-}
+#pw .online-app-body input[name="email"] {width: 100%;margin-bottom: 15px;padding: 10px;}
+#pw .online-app-body input[name="address"] {margin-right: 20px;padding: 10px;}
+#pw .online-app-body select {font-size: 18px;margin-left: auto;width: calc(100% - 200px);padding: 10px;}
+#pw .online-app-body textarea {margin-top: 15px;margin-bottom: 30px;padding: 10px;width: 100%;height: 200px;font-size: 15px;}
+#pw .online-app-body .alert-span{font-size: 15px;color: red;text-align: left;display: flex;visibility: hidden;}
 
 /* Thanks Page */
-#pw .thanks-page {
-    display: none;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-#pw .thanks-page-title div:last-child {
-    font-size: 15px;
-    margin-bottom: 70px;
-}
+#pw .thanks-page {display: none;padding-top: 10%;padding-bottom: 10%;}
+#pw .thanks-page-title div:last-child {font-size: 15px;margin-bottom: 70px;}
