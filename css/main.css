@@ -101,6 +101,8 @@
 #pw .service-next-btn {
     display: flex; 
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
 }
 #pw .service-next-btn button,
@@ -120,6 +122,8 @@
     color: white;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     width: 400px;
     padding-top: 5px;
